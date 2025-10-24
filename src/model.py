@@ -21,3 +21,20 @@ class CharLSTM(nn.Module):
         last_output = lstm_out[:, -1, :]
         output = self.fc(last_output)
         return output
+
+'''
+Input: [128, 100]
+"128 sequences, each with 100 character indices"  
+
+Embedding: [128, 100, 256]
+"128 sequences, 100 characters, each character is now 256 numbers"
+  
+LSTM: [128, 100, 512]
+"128 sequences, 100 positions, LSTM outputs 512 numbers at each position"
+  
+Get last output [:, -1, :] : [128, 512]
+"128 sequences, only the last position's 512 numbers"
+  
+Linear: [128, 65]
+  "128 sequences, 65 scores (one for each possible character)"
+'''
