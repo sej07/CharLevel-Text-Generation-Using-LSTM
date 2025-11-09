@@ -7,7 +7,7 @@ class Config:
     sequence_length = 100
     batch_size = 128
     learning_rate = 0.002
-    num_epochs= 50
+    num_epochs= 10
     device = 'mps'
     save_dir = 'models'
     results_dir = 'results'
