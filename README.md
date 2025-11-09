@@ -117,8 +117,8 @@ python src/generate.py
 **Training Configuration**: 10 epochs, batch size 128, learning rate 0.002
 
 ### Loss Curve Analysis
+<img width="570" height="345" alt="image" src="https://github.com/user-attachments/assets/1701eb2c-3522-41b7-89d1-44ed20f6931c" />
 
-![Training Loss](results/training_loss.png)
 
 **Observations**:
 - Rapid improvement in first 3 epochs (loss: 1.66 → 1.55)
@@ -178,36 +178,36 @@ A feect no forkisfate;
 ## Future Improvements
 
 ### Model Architecture
-- [ ] Implement attention mechanism for better long-range dependencies
-- [ ] Try GRU (Gated Recurrent Unit) and compare performance
-- [ ] Experiment with deeper networks (3-4 LSTM layers)
-- [ ] Increase hidden size to 1024 for more capacity
+- Implement attention mechanism for better long-range dependencies
+- Try GRU (Gated Recurrent Unit) and compare performance
+- Experiment with deeper networks (3-4 LSTM layers)
+- Increase hidden size to 1024 for more capacity
 
 ### Training Enhancements
-- [ ] Reduce learning rate to 0.001 to prevent overfitting
-- [ ] Increase dropout to 0.5 for better regularization
-- [ ] Implement learning rate scheduling (decay over epochs)
-- [ ] Add gradient clipping to prevent exploding gradients
-- [ ] Train for 30-50 epochs with early stopping
-- [ ] Create validation set for proper model evaluation
+- Reduce learning rate to 0.001 to prevent overfitting
+- Increase dropout to 0.5 for better regularization
+- Implement learning rate scheduling (decay over epochs)
+- Add gradient clipping to prevent exploding gradients
+- Train for 30-50 epochs with early stopping
+- Create validation set for proper model evaluation
 
 ### Data & Tokenization
-- [ ] Experiment with word-level tokenization
-- [ ] Try byte-pair encoding (BPE) or SentencePiece
-- [ ] Train on larger corpus (multiple authors)
-- [ ] Add special tokens for better structure control
+- Experiment with word-level tokenization
+- Try byte-pair encoding (BPE) or SentencePiece
+- Train on larger corpus (multiple authors)
+- Add special tokens for better structure control
 
 ### Generation Improvements
-- [ ] Implement beam search for higher quality output
-- [ ] Add nucleus (top-p) sampling
-- [ ] Try top-k sampling strategies
-- [ ] Implement generation stopping criteria
+- Implement beam search for higher quality output
+- Add nucleus (top-p) sampling
+- Try top-k sampling strategies
+- Implement generation stopping criteria
 
 ### Advanced Features
-- [ ] Upgrade to Transformer architecture
-- [ ] Compare with modern language models
-- [ ] Build interactive web interface
-- [ ] Add fine-tuning on specific Shakespeare plays
+- Upgrade to Transformer architecture
+- Compare with modern language models
+- Build interactive web interface
+- Add fine-tuning on specific Shakespeare plays
 
 ## Key Learnings
 
