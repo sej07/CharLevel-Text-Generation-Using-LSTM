@@ -1,8 +1,13 @@
-import torch 
+import torch
 import torch.nn.functional as F
-from model import CharLSTM
-import sys
 import os
+
+# Handle imports whether running from root or src directory
+try:
+    from src.model import CharLSTM
+except ModuleNotFoundError:
+    from model import CharLSTM
+import sys
 
 def generate_text(model, seed_text, char_to_idx, idx_to_char, 
                   length = 500, temperature = 1.0, device = 'mps'):
@@ -50,10 +55,10 @@ def main():
                              seed_text=seed_text,
                              char_to_idx=char_to_idx,
                              idx_to_char= idx_to_char, 
-                             length= 00, 
+                             length= 500, 
                              temperature=temp, 
                              device='mps')
-    print(text)
+        print(text)
     print("\n")
 
 if __name__ == "__main__":
