@@ -13,13 +13,13 @@ This project implements a character-level language model using LSTM (Long Short-
 - **Stacked LSTM Architecture**: Two-layer LSTM with 512 hidden units per layer
 - **Temperature Sampling**: Controllable text generation with temperature parameter (0.5 to 2.0)
 - **Dropout Regularization**: Prevents overfitting with 30% dropout between layers
-- **Apple Silicon Support**: Optimized for MPS (Metal Performance Shaders) on M-series Macs
 - **Modular Code Structure**: Clean separation of data loading, model, training, and generation
 - **Comprehensive Visualization**: Training loss curves and generation comparisons
 
 ## Dataset
 
 **Source**: Shakespeare's Complete Works (Tiny Shakespeare dataset)
+
 **Statistics**:
 - **Total Characters**: 1,115,394
 - **Vocabulary Size**: 65 unique characters (a-z, A-Z, digits, punctuation)
